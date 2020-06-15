@@ -9,12 +9,20 @@ edition = "2018"
 [dependencies]
 # encryptfile = "*"
 rust-crypto = "*"
-rand = "*"
-http_req = "*"
+rustc-serialize = "*"
+rand = "0.6.5"
+num-bigint-dig = "0.4.0"
+# http_req = "*"
+# sodiumoxide = "*"
+rsa = "*"
+dialog = "0.2.1"
+# aes = "*"
 # curl = "*"
 # minreq = { version = "*", features = ["https"] }
 
 # libc = "*"
+
+
 
 [profile.release]
 opt-level = 'z'  # Optimize for size.
