@@ -1,0 +1,23 @@
+[package]
+name = "ruts_wind"
+version = "0.1.0"
+authors = ["Giacomo Rizzi <gufoes@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# encryptfile = "*"
+rust-crypto = "*"
+rand = "*"
+http_req = "*"
+# curl = "*"
+# minreq = { version = "*", features = ["https"] }
+
+# libc = "*"
+
+[profile.release]
+opt-level = 'z'  # Optimize for size.
+lto = true
+codegen-units = 1
+panic = 'abort'
